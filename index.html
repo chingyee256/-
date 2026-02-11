@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爸爸，生日快乐</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 页面1: 蛋糕互动 -->
+    <section id="cake-section" class="section active">
+        <!-- 装饰星星 -->
+        <div class="decorative-stars">
+            <span class="star star-1 clickable-star">⭐</span>
+            <span class="star star-2 clickable-star">✨</span>
+            <span class="star star-3 clickable-star">⭐</span>
+            <span class="star star-4 clickable-star">✨</span>
+            <span class="star star-5 clickable-star">⭐</span>
+            <span class="star star-6 clickable-star">✨</span>
+            <span class="star star-7 clickable-star">💫</span>
+            <span class="star star-8 clickable-star">⭐</span>
+        </div>
+        
+        <!-- 浪漫粒子效果 -->
+        <div class="romantic-particles"></div>
+        <div class="cake-container">
+            <p class="greeting-text">施清华 你好，请查收</p>
+            <p class="date-text">0212 生日快乐</p>
+            <p class="top-text">致世界上最好的爸爸</p>
+            <h1 class="main-text">爸爸，许个愿吧。</h1>
+            
+            <div class="cake-wrapper">
+                <!-- 蛋糕主体 -->
+                <div class="cake">
+                    <!-- 第三层 -->
+                    <div class="cake-layer layer-3">
+                        <div class="candles">
+                            <div class="candle" data-candle="1">
+                                <div class="flame"></div>
+                                <div class="smoke"></div>
+                            </div>
+                            <div class="candle" data-candle="2">
+                                <div class="flame"></div>
+                                <div class="smoke"></div>
+                            </div>
+                            <div class="candle" data-candle="3">
+                                <div class="flame"></div>
+                                <div class="smoke"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二层 -->
+                    <div class="cake-layer layer-2">
+                        <div class="candles">
+                            <div class="candle" data-candle="4">
+                                <div class="flame"></div>
+                                <div class="smoke"></div>
+                            </div>
+                            <div class="candle" data-candle="5">
+                                <div class="flame"></div>
+                                <div class="smoke"></div>
+                            </div>
+                            <div class="candle" data-candle="6">
+                                <div class="flame"></div>
+                                <div class="smoke"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第一层 -->
+                    <div class="cake-layer layer-1">
+                        <div class="candles">
+                            <div class="candle" data-candle="7">
+                                <div class="flame"></div>
+                                <div class="smoke"></div>
+                            </div>
+                            <div class="candle" data-candle="8">
+                                <div class="flame"></div>
+                                <div class="smoke"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="blow-btn" class="blow-button">
+                吹蜡烛 🕯️
+            </button>
+        </div>
+    </section>
+
+    <!-- 页面2: 祝福文字 -->
+    <section id="blessing-section" class="section">
+        <button id="back-btn" class="back-button">← 返回</button>
+        <div class="blessing-container">
+            <h2 class="blessing-title" id="blessing-title"></h2>
+            <p class="blessing-text" id="blessing-text"></p>
+        </div>
+    </section>
+
+    <!-- 页面3: 回忆相册 -->
+    <section id="memories-section" class="section">
+        <button id="back-btn" class="back-button">← 返回</button>
+        <div class="memories-container">
+            <div class="memory-item floating-1">
+                <div class="memory-photo">
+                    <img src="8c5cebc41c20cd8373219655d338ed57.jpg" alt="回忆">
+                </div>
+                <p class="memory-text">那些年，你陪我走过的每一步，都成了最珍贵的回忆。</p>
+            </div>
+            <div class="memory-item floating-2">
+                <div class="memory-photo">
+                    <img src="50f8e1b6854d536f9489a2c13ab157b4.jpg" alt="回忆">
+                </div>
+                <p class="memory-text">每一个生日，你都用最温暖的方式，让我感受到被爱。</p>
+            </div>
+            <div class="memory-item floating-3">
+                <div class="memory-photo">
+                    <img src="51a5258bd034d8eb985e414099eaa589.jpg" alt="回忆">
+                </div>
+                <p class="memory-text">和你在一起的每一刻，都是我最想珍藏的时光。</p>
+            </div>
+            <div class="memory-item floating-4">
+                <div class="memory-photo">
+                    <img src="026250b016cd13993a0b3300d175de23.jpg" alt="回忆">
+                </div>
+                <p class="memory-text">你的笑容，像夜空中最亮的星，照亮我前行的路。</p>
+            </div>
+            <div class="memory-item floating-5">
+                <div class="memory-photo">
+                    <img src="66947962da5a78678de2b598d1ab5470.jpg" alt="回忆">
+                </div>
+                <p class="memory-text">一家人在一起的时光，就是最美好的风景。</p>
+            </div>
+            <div class="memory-item floating-6">
+                <div class="memory-photo">
+                    <img src="13396012439026818.jpg" alt="回忆">
+                </div>
+                <p class="memory-text">你见证了我的成长，我见证了你的温柔。</p>
+            </div>
+            <div class="memory-item floating-7">
+                <div class="memory-photo">
+                    <img src="d2faaaf2313354da6327f2d2163e31a7.jpg" alt="回忆">
+                </div>
+                <p class="memory-text">和你一起走过的路，看过的风景，都是我最珍贵的收藏。</p>
+            </div>
+            <div class="memory-item floating-8">
+                <div class="memory-photo">
+                    <img src="dad.jpg" alt="回忆">
+                </div>
+                <p class="memory-text">戴上生日帽的你，像个孩子一样快乐，那是我最想看到的。</p>
+            </div>
+            <div class="memory-item floating-9">
+                <div class="memory-photo">
+                    <img src="e0e7be9c4cf256e33f68616f7a7f5379.jpg" alt="回忆">
+                </div>
+                <p class="memory-text">和你一起看过的风景，都成了最美的回忆。</p>
+            </div>
+            <div class="memory-item floating-10">
+                <div class="memory-photo">
+                    <img src="f052bb360849638a67d3acb59b0346f9.jpg" alt="回忆">
+                </div>
+                <p class="memory-text">你为我骄傲的样子，是我努力的最大动力。</p>
+            </div>
+            <div class="memory-item floating-11">
+                <div class="memory-photo">
+                    <img src="f60e57410197be09743cc450597e6334.jpg" alt="回忆">
+                </div>
+                <p class="memory-text">你手中的冰淇淋，就像你给我的爱，总是那么甜蜜。</p>
+            </div>
+            <div class="memory-item floating-12">
+                <div class="memory-photo">
+                    <img src="fb6fa813a51c6f1849f7d16f711c330f.jpg" alt="回忆">
+                </div>
+                <p class="memory-text">和你一起走过的路，看过的风景，都是我最珍贵的收藏。</p>
+            </div>
+            
+            <!-- 打开信按钮 -->
+            <div class="open-letter-container">
+                <button id="open-letter-btn" class="open-letter-btn">
+                    <span class="letter-icon">✉️</span>
+                    <span class="letter-text">打开信</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 信件弹窗 -->
+    <div id="letter-modal" class="letter-modal">
+        <div class="letter-modal-content">
+            <button class="close-letter-btn" id="close-letter-btn">×</button>
+            <div class="letter-paper">
+                <div class="letter-content-dynamic" id="letter-content-dynamic"></div>
+                <div class="letter-heart-btn-container" id="letter-heart-btn-container" style="display: none;">
+                    <button id="heart-btn" class="heart-button">
+                        <span class="heart-icon">💝</span>
+                        <span class="heart-text">送你一颗爱心</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 交互爱心 -->
+    <div id="interactive-heart" class="interactive-heart">
+        <button class="close-heart-btn" id="close-heart-btn">×</button>
+        <div class="heart-main">❤️</div>
+        <div class="heart-particles"></div>
+    </div>
+
+    <!-- 页面4: 给爸爸的一封信 -->
+    <section id="letter-section" class="section">
+        <button id="back-btn" class="back-button">← 返回</button>
+        <div class="letter-container">
+            <h2 class="letter-title">给爸爸的一封信</h2>
+            <div class="letter-content">
+                <p>亲爱的爸爸，</p>
+                <p>今天想对你说一些，以前没说出口的话。</p>
+                <p>谢谢你，在我看不见的地方，默默承担了那么多。那些你独自面对的困难，那些你从未抱怨的辛苦，我现在才慢慢懂得。</p>
+                <p>以前的我，可能不够理解你。但现在我想说，你的每一个决定，每一次沉默，我都感受到了背后的爱。</p>
+                <p>现在的我想对你说：</p>
+                <p>希望时间能慢一点，让我有更多机会陪伴你。希望你能多为自己想想，不要总是把我们放在第一位。</p>
+                <p>爸爸，生日快乐。愿你接下来的每一天，都慢一点，暖一点，充满笑容。</p>
+                <p class="letter-signature">爱你的孩子</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页面5: 结尾祝福 -->
+    <section id="ending-section" class="section">
+        <button id="back-btn" class="back-button">← 返回</button>
+        <div class="ending-container">
+            <p class="ending-text">愿接下来的每一天，都慢一点，暖一点，充满笑容。</p>
+            <p class="ending-text-main">爸爸，生日快乐。</p>
+            <p class="ending-footer">用爱制作 ❤️</p>
+        </div>
+    </section>
+
+    <!-- 背景音乐控制 -->
+    <div class="music-control">
+        <button id="music-toggle" class="music-btn">🔇</button>
+    </div>
+
+    <audio id="bg-music" loop autoplay>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
